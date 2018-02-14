@@ -329,7 +329,7 @@
   .push-four {margin-left:66.666%;}
   .push-five {margin-left:83.332%;}
 }
-.row.sevenths,.row.seven {
+.row.no-gutter.sevenths,.row.no-gutter.seven {
   .column,.columns{
     margin-left: 0;
     max-width: 14.2857%;
@@ -342,7 +342,7 @@
   .push-five {margin-left:71.4285%;}
   .push-six {margin-left:86.5%;}
 }
-.row.eighths,.row.eight {
+.row.no-gutter.eighths,.row.no-gutter.eight {
   .column,.columns{
     margin-left: 0;
     max-width: 12.5%;
@@ -356,7 +356,7 @@
   .push-six {margin-left:75%;}
   .push-seven {margin-left:87.5%;}
 }
-.row.ninths,.row.nine {
+.row.no-gutter.ninths,.row.no-gutter.nine {
   .column,.columns{
     margin-left: 0;
     max-width: 11.111%;
@@ -371,7 +371,7 @@
   .push-seven {margin-left:77.777%;}
   .push-eight {margin-left:89.5%;}
 }
-.row.tenths,.row.ten {
+.row.no-gutter.tenths,.row.no-gutter.ten {
   .column,.columns{
     margin-left: 0;
     max-width: 10%;
@@ -387,7 +387,7 @@
   .push-eight {margin-left:85.2%;}
   .push-nine {margin-left:90.6%;}
 }
-.row.elevenths,.row.eleven {
+.row.no-gutter.elevenths,.row.no-gutter.eleven {
   .column,.columns{
     margin-left: 0;
     max-width: 9.0909%;
@@ -404,7 +404,7 @@
   .push-nine {margin-left:85.8585%;}
   .push-eleven {margin-left:91.5%;}
 }
-.row.twelfths,.row.twelve {
+.row.no-gutter.twelfths,.row.no-gutter.twelve {
   .column,.columns{
     margin-left: 0;
     max-width: 8.3333%;
@@ -422,7 +422,7 @@
   .push-ten {margin-left:83.333%;}
   .push-eleven {margin-left:92.3%;}
 }
-.row.thirteen {
+.row.no-gutter.thirteen {
   .column,.columns{
     margin-left: 0;
     max-width: 7.2%;
@@ -441,7 +441,7 @@
   .push-eleven {margin-left:84.6153%;}
   .push-twelve {margin-left:92.8%;}
 }
-.row.forteen {
+.row.no-gutter.forteen {
   .column,.columns{
     margin-left: 0;
     max-width: 6.6%;
@@ -461,7 +461,7 @@
   .push-twelve {margin-left:85.7142%;}
   .push-thirteen {margin-left:93.4%;}
 }
-.row.fifteen {
+.row.no-gutter.fifteen {
   .column,.columns{
     margin-left: 0;
     max-width: 6.25%;
@@ -482,7 +482,7 @@
   .push-thirteen {margin-left:86.6665%;}
   .push-fourteen {margin-left:93.75%;}
 }
-.row.sixteen {
+.row.no-gutter.sixteen {
   .column,.columns{
     margin-left: 0;
     max-width: 6%;
@@ -491,23 +491,38 @@
 }
 
 //---------- A class="row wrap" will result in columns that will reach a minimum width and begin to jump to the next line
-.row.wrap {
+
+.row.wrap.two {
+  flex-wrap:wrap;
+  .column,.columns{
+    min-width:48%;
+  }
+}
+.row.wrap.three {
+  flex-wrap:wrap;
+  .column,.columns{
+    min-width:31.333%;
+  }
+}
+.row.wrap.four {
   flex-wrap:wrap;
   .column,.columns{
     min-width:23%;
   }
 }
-.row.wrap.three {
+.row.no-gutter.wrap.two{
+  flex-wrap:wrap;
   .column,.columns{
-    min-width:31%;
+    min-width:50%;
   }
 }
-.row.wrap.two {
+.row.no-gutter.wrap.three{
+  flex-wrap:wrap;
   .column,.columns{
-    min-width:48%;
+    min-width:33.333%;
   }
 }
-.row.no-gutter.wrap{
+.row.no-gutter.wrap.four{
   flex-wrap:wrap;
   .column,.columns{
     min-width:25%;
@@ -520,6 +535,13 @@
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
+sub {bottom: -0.25em;}
+sup {top: -0.5em;}
 html { line-height: 1; }
 ol, ul { list-style: none; }
 table { border-collapse: collapse; border-spacing: 0; }
