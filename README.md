@@ -1,5 +1,5 @@
 # flaw.less
-16 column Grid System Designed by Windfall Studios
+Layout Framework with 16 column Grid System Designed by Windfall Studios.
 
 ## Installation
 
