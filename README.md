@@ -131,7 +131,7 @@ You can also declare a row have endless columns as well. This type of row will a
 
 ```html
 <div class="row wrap two">
-	<div class="column push-two">
+	<div class="column">
 		<p>Lorem ipsum</p>
 	</div>
 	<div class="column">
@@ -148,4 +148,18 @@ You can also declare a row have endless columns as well. This type of row will a
 ```
 ```diff
 + Great for Loops!
+```
+
+Make use of dynamic column ordering. In the example below, on a desktop screen size a call to action button is on the right side. However normally on mobile this column would sink to the botom below possibly paragraphs of content. With the class "mobile-first" the column holding a CTA will rise and sit below the header image. Be sure to declare mobile-second on the other column.
+
+```html
+<div class="header-img"></div>
+<div class="row two">
+	<div class="column mobile-second">
+		<p>Lorem ipsum</p>
+	</div>
+	<div class="column mobile-first">
+		<button>Call to Action</button>
+	</div>
+</div>
 ```
