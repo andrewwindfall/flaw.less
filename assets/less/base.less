@@ -19,7 +19,7 @@
 .seventh {order:7;}
 .eighth {order:8;}
 //------ change the order for mobile
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: @mobile-break) {
   .mobile-first {order: 1;}
   .mobile-second {order:2;}
   .mobile-third {order:3;}
@@ -518,11 +518,6 @@
   max-width:initial;
 }
 
-@media only screen and (max-width: 768px) {
-  .row { display: block;}
-  .column,.columns {width:98%;margin-left:1%;margin-right:1%;}
-}
-
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 html { line-height: 1; }
@@ -549,7 +544,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html { font-size: 100%; line-height: 1.625em; }
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 body { background: #fff; .main-font; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
+
 html, body { height: 100%; }
 .hide { display: none; }
 .hide.active, .show { display: block; }
@@ -569,13 +564,11 @@ h1, h2, h3, h4, h5, h6 { .main-font; font-weight: 300; color: #444444; text-rend
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: @link; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: @hover; }
 
-@media only screen and (max-width: 767px) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
+@media only screen and (max-width: @mobile-break) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
 h1.xlarge { font-size: 110px;}
 h1.xxlarge { font-size: 126px;}
 h1.absurd { font-size: 177px;}
 
-@media only screen and (max-width: 767px) { h1 { font-size: 42px; font-size: 2.625rem; }
-  h2 { font-size: 36px; font-size: 2.25rem; } }
 .subhead { color: #777; font-weight: normal; margin-bottom: 20px; }
 
 /*=====================================================
@@ -675,7 +668,8 @@ abbr { text-transform: none; }
   .valign > div, .valign > article, .valign > section, .valign > figure { display: inline-block; vertical-align: middle; }
 
   /* Mobile */
-  @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; }
+  @media only screen and (max-width: @mobile-break) {
+    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; }
     .container { min-width: 0; margin-left: 0; margin-right: 0; }
     .row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
     .row .row .column, .row .row .columns { padding: 0; }
@@ -685,7 +679,8 @@ abbr { text-transform: none; }
     [class*="column"] + [class*="column"]:last-child { float: none; }
     [class*="column"]:before { display: table; }
     [class*="column"]:after { display: table; clear: both; }
-    [class^="push_"], [class*="push_"], [class^="pull_"], [class*="pull_"] { margin-left: 0 !important; } }
+    [class^="push_"], [class*="push_"], [class^="pull_"], [class*="pull_"] { margin-left: 0 !important; }
+  }
 
   /* SHAME */
   .ie8 .xxwide, .ie8 .xwide, .ie8 .wide, .ie8 .normal, .ie8 .narrow, .ie8 .xnarrow { display: inline; }
@@ -881,11 +876,11 @@ abbr { text-transform: none; }
   .mobile-only{
     display:none;
   }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: @mobile-break) {
   .no-mobile { display:none; }
   .mobile-only { display:block; }
   .row {
     flex-direction: column;
-    .column, .columns { margin-left: 0; max-width:100%; min-width:100%;}
+    .column, .columns { margin-left: 0%!important; margin-right:0%!important; max-width:100%!important; min-width:100%!important;}
   }
 }

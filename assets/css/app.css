@@ -1216,17 +1216,6 @@
 .row.full {
   max-width: initial;
 }
-@media only screen and (max-width: 768px) {
-  .row {
-    display: block;
-  }
-  .column,
-  .columns {
-    width: 98%;
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-}
 html,
 body,
 div,
@@ -1402,14 +1391,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (max-width: 767px) {
-  body {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    width: 100%;
-    min-width: 0;
-  }
-}
 html,
 body {
   height: 100%;
@@ -1509,16 +1490,6 @@ h1.xxlarge {
 }
 h1.absurd {
   font-size: 177px;
-}
-@media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 42px;
-    font-size: 2.625rem;
-  }
-  h2 {
-    font-size: 36px;
-    font-size: 2.25rem;
-  }
 }
 .subhead {
   color: #777;
@@ -2132,9 +2103,10 @@ h6 {
   }
   .row .column,
   .row .columns {
-    margin-left: 0;
-    max-width: 100%;
-    min-width: 100%;
+    margin-left: 0%!important;
+    margin-right: 0%!important;
+    max-width: 100%!important;
+    min-width: 100%!important;
   }
 }
 /* ------------------ GENERAL -------------------- */
