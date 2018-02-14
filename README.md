@@ -100,7 +100,10 @@ You can use Modal boxes and expanding content sections to make content clean
 </div>
 ```
 
-Notice that columns stretch to match the column with the most content in it. ```diff + Fancy! ```
+Notice that columns stretch to match the column with the most content in it. 
+```diff 
++ Fancy!
+```
 
 Columns are positioned relative so that adding absolute items inside is a breeze!
 
