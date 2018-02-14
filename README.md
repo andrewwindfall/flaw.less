@@ -30,7 +30,8 @@ Options.less file allows you to set custom variables. You should be sure to chan
 1. Font Size
 2. Main/secondary theme colors
 3. Font families
-4. row size
+4. Row size
+5. Responsive break point
 
 Use the style.less to add your own classes and styles. 
 
