@@ -9,7 +9,6 @@ Link to files in header
 
 ```shell
 <link rel="stylesheet" href="/assets/css/app.css">
-<script src="assets/js/modernizr-2.6.2.min.js"></script>
 <script src="assets/js/jquery-2.0.2.min.js"></script>
 ```
 
