@@ -38,23 +38,23 @@ Create a row and specify how the columns should be broken up:
 
 ```html
 <div class="row two">
-			<div class="column">
-				<p>Lorem ipsum</p>
-			</div>
-			<div class="column">
-				<p>Lorem ipsum</p>
-			</div>
+	<div class="column">
+		<p>Lorem ipsum</p>
+	</div>
+	<div class="column">
+		<p>Lorem ipsum</p>
+	</div>
 </div>
 <div class="row three">
-			<div class="column">
-				<p>Lorem ipsum</p>
-			</div>
-			<div class="column">
-				<p>Lorem ipsum</p>
-			</div>
-      <div class="column">
-				<p>Lorem ipsum</p>
-			</div>
+	<div class="column">
+		<p>Lorem ipsum</p>
+	</div>
+	<div class="column">
+		<p>Lorem ipsum</p>
+	</div>
+      	<div class="column">
+		<p>Lorem ipsum</p>
+	</div>
 </div>
 <!-- four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen-->
 <!-- fourths, sixths, sevenths, eighths, ninths, tenths, elevenths,twelfths, etc can also be used -->
