@@ -19,3 +19,15 @@ Link to files in Footer
 ```
 
 Boom! Good to go!
+
+
+## Features
+
+Options.less file allows you to set custom variables. You should be sure to change the following:
+
+1. Font Size
+2. Main/secondary theme colors
+3. Font families
+
+
+### Tutorial
