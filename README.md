@@ -124,7 +124,7 @@ Space out columns by pushing them. This example will give you a 50% margin on th
 Note that a push will push by its column length. So if you have a row with a class of "three" the push-one will react accordingly.
 You cannot push a column past the number of columns in a row. For instance, push-ten will not function in a "row two"
 
-You can declare a row to wrap it's columns as well. 
+You can also declare a row have endless columns as well. This type of row will automatically bump it's columns to a knew row when it has enough to fill itself.
 
 ```html
 <div class="row wrap two">
@@ -134,6 +134,15 @@ You can declare a row to wrap it's columns as well.
 	<div class="column">
 		<p>Lorem ipsum</p>
 	</div>
+	<div class="column">
+		<p>Lorem ipsum</p>
+	</div>
+	<div class="column">
+		<p>Lorem ipsum</p>
+	</div>
 </div>
 <!-- row wrap three, row wrap four-->
+```
+```diff
+Great for Loops!
 ```
