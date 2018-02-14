@@ -102,7 +102,7 @@ You can use Modal boxes and expanding content sections to make content clean
 
 Notice that columns stretch to match the column with the most content in it. 
 ```diff 
-Fancy huh!?
++ Fancy huh!?
 ```
 
 Columns are positioned relative so that adding absolute items inside is a breeze!
@@ -144,5 +144,5 @@ You can also declare a row have endless columns as well. This type of row will a
 <!-- row wrap three, row wrap four-->
 ```
 ```diff
-Great for Loops!
++ Great for Loops!
 ```
