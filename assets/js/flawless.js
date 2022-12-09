@@ -61,7 +61,7 @@ $('.close').click(function() {
 });
 
 $('.modal').click(function(event) {
-	if($(event.target).parents('.modal-content').andSelf().is('.modal')){
+	if($(event.target).parents('.modal-content').addBack().is('.modal')){
 		$('.modal').css('display','none');
 	}
 });
